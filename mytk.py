@@ -10,9 +10,9 @@ class MyTk(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
         self.configure(bg='light blue')
-        self.geometry('1848x1080+400+0')
+        self.geometry('1820x1080+400+0')
         self.title = MyLabel(self, t="Jeu de dames")
-        self.title.grid(row=0, column=0, columnspan=2, padx=20, pady=20)
+        self.title.grid(row=0, column=1, columnspan=2, padx=20, pady=20)
         self.menu = MyFrame(self)
         self.menu.grid(row=1, column=0, padx=20, pady=20)
         self.board = np.zeros((10, 10))  # Plateau de jeu initial vide
